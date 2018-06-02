@@ -63,7 +63,7 @@ Sinta-se livre para criar uma [pergunta](https://github.com/Langsdorf/BlackBird/
   ##### 1.5 Tudo pronto, veja os exemplos para aprender mais! :smile:
   
  ## Pull requests:
- ## Caso você esteja interessado em ajudar, crie uma fork e sinta-se livre para criar um pull request!
+ ### Caso você esteja interessado em ajudar, crie uma fork e sinta-se livre para criar um pull request!
  
  ## Agradecimentos:
  ### - [Twitter4j](https://github.com/yusuke/twitter4j)
