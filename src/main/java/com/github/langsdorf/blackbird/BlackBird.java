@@ -90,7 +90,8 @@ public class BlackBird implements URLList {
 	public BlackBird pinAuth(String pin) throws IOException, InterruptedException, ExecutionException {
 		OAuth1AccessToken accessToken = oauthService.getAccessToken(oauthRequestToken, pin);
 		setOauthAccessToken(accessToken);
-		checkCredentials();
+        checkCredentials();
+        System.out.println("No way");
 		return this;
 	}
 
