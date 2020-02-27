@@ -91,7 +91,7 @@ public class BlackBird implements URLList {
 		OAuth1AccessToken accessToken = oauthService.getAccessToken(oauthRequestToken, pin);
 		setOauthAccessToken(accessToken);
         checkCredentials();
-        System.out.println("No way");
+        System.out.println("???");
 		return this;
 	}
 
