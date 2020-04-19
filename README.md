@@ -1,15 +1,17 @@
 # BlackBird :bird:
 [![](https://jitpack.io/v/Langsdorf/BlackBird.svg)](https://jitpack.io/#Langsdorf/BlackBird) [![](https://api.travis-ci.org/Langsdorf/BlackBird.svg?branch=master)](https://travis-ci.org/Langsdorf/BlackBird)
-### Uma simples API do Twitter feito em Java usando ScribeJava :dog:.
-### [English README](https://github.com/Langsdorf/BlackBird/blob/master/README_EN.md)
-## Por que usar? :confused:
-É simples, rápido e fácil! Por que não?
+### A simple Twitter API for Java using ScribeJava :dog:.
+#### Learning project
 
-## Exemplos :point_right:
-Veja a página [Exemplos](https://github.com/Langsdorf/BlackBird/tree/master/src/examples/java/com/github/langsdorf/blackbird)
+## Why BlackBird? :confused:
+It's simple, fast and easy! Why not?
+
+## Examples :point_right:
+Check out the [Examples](https://github.com/Langsdorf/BlackBird/tree/master/src/examples/java/com/github/langsdorf/blackbird) page.
 ## Maven :computer:
-Você pode usar o BlackBird com Maven utilizando o JitPack:
-```
+You can use BlackBird with Maven by using JitPack:
+`
+
 	<repositories>
 		<repository>
 		    <id>jitpack.io</id>
@@ -21,53 +23,50 @@ Você pode usar o BlackBird com Maven utilizando o JitPack:
 	    <groupId>com.github.Langsdorf</groupId>
 	    <artifactId>BlackBird</artifactId>
 	    <version>1.0</version>
-	</dependency>	
-```
+	</dependency>
+
 
 ## Downloads :floppy_disk:
-Veja a página de [releases](https://github.com/Langsdorf/BlackBird/releases).
+Check out the [releases](https://github.com/Langsdorf/BlackBird/releases) page.
 
-## Perguntas :question:
-Sinta-se livre para criar uma [pergunta](https://github.com/Langsdorf/BlackBird/issues).
+## Questions :question:
+Feel free to create an [issue](https://github.com/Langsdorf/BlackBird/issues).
 
-## Primeiros passos :bowtie:
+## Getting Started :bowtie:
 
-### Usando a API com seu usuário:
-#### 1. Vá até a [página de aplicativos do Twitter](https://apps.twitter.com/)
-  ##### 1.1 Crie um aplicativo
-  ##### 1.2 Depois de ter criado o aplicativo, vá até a aba "Keys and Access Tokens"
-  ##### 1.3 Se quiser usar a API com seu usuário, vá no final da página e clique em "Create my access token"
-  ##### 1.3.1 Caso você queria utilizar com outro usuário, terá que usar o modo de autenticação por PIN.
-  ##### 1.4 Agora você possui Consumer Key, Consumer Secret, Access Token e Access Token Secret
-  ##### 1.5 Crie o objeto BlackBird:
-  ```java
-  BlackBird blackBird = new BlackBird(consumerKey, consumerSecret, accessToken, accessTokenSecret);
-  ```
-  ##### 1.6 Tudo pronto, veja os exemplos para aprender mais! :smile:
-  
+### Using the API with your user:
+#### 1. Go to the [Twitter Apps Page](https://apps.twitter.com/)
+##### 1.1 Create an application
+##### 1.2 Once you have created the application, go to the "Keys and Access Tokens" page
+##### 1.3 Go to the bottom of the page and click on "Create my access token"
+##### 1.4 Now you have Consumer Key, Consumer Secret, Access Token and Access Token Secret
+##### 1.5 Create the BlackBird object:
 
-### Usando a API com outro usuário:
-#### 1. Vá até a [página de aplicativos do Twitter](https://apps.twitter.com/)
-  ##### 1.1 Crie um aplicativo
-  ##### 1.2 Depois de ter criado o aplicativo, vá até a aba "Keys and Access Tokens
-  ##### 1.3 Agora você possui Consumer Key e Consumer Secret.
-  ##### 1.4 Faça a autenticação:
-  ```java
-  URLBasedOAuth oauthURL = new URLBasedOAuth(consumerKey, consumerSecret);
-  
-  String URL = oauthURL.getAuthorizationUrl(); //URL para a página que o usuário deve ir para conceder o acesso.
-  String pin = ""; //Coloque aqui o PIN recebido após o usuário conceder acesso.
-  
-  BlackBird blackBird = oauthURL.authenticate(pin);
-  ```
-  ##### 1.5 Tudo pronto, veja os exemplos para aprender mais! :smile:
-  
- ## Pull requests:
- ### Caso você esteja interessado em ajudar, crie uma fork e sinta-se livre para criar um pull request!
- 
- ## Agradecimentos:
- ### - [Twitter4j](https://github.com/yusuke/twitter4j)
- ### - [ScribeJava](https://github.com/scribejava/scribejava)
- ### - [Twitter =)](https://developer.twitter.com/)
- 
- ###### Deixe uma estrela (star) :wink:
+```java
+BlackBird blackBird = new BlackBird(consumerKey, consumerSecret, accessToken, accessTokenSecret);
+```
+##### 1.6 That's it, see examples to learn more! :smile:
+
+### Using the API with another User:
+#### 1. Go to the [Twitter Apps Page] (https://apps.twitter.com/)
+##### 1.1 Create an application
+##### 1.2 Once you have created the application, go to the "Keys and Access Tokens" page
+##### 1.3 You now have Consumer Key and Consumer Secret.
+##### 1.4 Authenticate:
+```java
+URLBasedOAuth oauthURL = new URLBasedOAuth(consumerKey, consumerSecret);
+
+String URL = oauthURL.getAuthorizationUrl(); // URL to the page that the user must go to grant the access.
+String pin = ""; // Enter the PIN received after the user grants access.
+
+BlackBird blackBird = oauthURL.authenticate(pin);
+```
+##### 1.5 That's it, see examples to learn more! :smile:
+
+## Pull requests:
+### If you are interested in helping, create a fork and feel free to create a pull request!
+
+## Thanks:
+### - [Twitter4j](https://github.com/yusuke/twitter4j)
+### - [ScribeJava](https://github.com/scribejava/scribejava)
+### - [Twitter =)](https://developer.twitter.com/)
